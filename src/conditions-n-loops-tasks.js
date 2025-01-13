@@ -132,12 +132,12 @@ function convertToRomanNumerals(num) {
     { value: 4, numeral: 'IV' },
     { value: 1, numeral: 'I' },
   ];
-  for (const { value, numeral } of romanValues) {
+  for (const { value, numeral } of romanValues)
     while (number >= value) {
       result += numeral;
       number -= value;
     }
-  }
+
   return result;
 }
 
@@ -156,7 +156,7 @@ function convertToRomanNumerals(num) {
  *  '10,5'    => 'one zero point five'
  *  '1950.2'  => 'one nine five zero point two'
  */
-function convertNumberToString(numberStr) {}
+function convertNumberToString(/* numberStr */) {}
 /**
  * Determines whether a string is a palindrome.
  * In this task, the use of methods of the String and Array classes is not allowed.
@@ -169,7 +169,7 @@ function convertNumberToString(numberStr) {}
  *  '0123210'   => true
  *  'qweqwe'    => false
  */
-function isPalindrome(str) {}
+function isPalindrome(/* str */) {}
 
 /**
  * Finds the first occurrence of a letter in a string.
