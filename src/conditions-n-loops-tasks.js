@@ -119,27 +119,7 @@ function isIsoscelesTriangle(a, b, c) {
  *  10  => X
  *  26  => XXVI
  */
-function convertToRomanNumerals(num) {
-  let number = num;
-  if (num < 1 || num > 39) {
-    return '';
-  }
-  let result = '';
-  const romanValues = [
-    { value: 10, numeral: 'X' },
-    { value: 9, numeral: 'IX' },
-    { value: 5, numeral: 'V' },
-    { value: 4, numeral: 'IV' },
-    { value: 1, numeral: 'I' },
-  ];
-  for (const { value, numeral } of romanValues)
-    while (number >= value) {
-      result += numeral;
-      number -= value;
-    }
-
-  return result;
-}
+function convertToRomanNumerals(/* num */) {}
 
 /**
  * Converts a number to a string, replacing digits with words.
