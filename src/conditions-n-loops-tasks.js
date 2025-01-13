@@ -22,12 +22,8 @@
  *  -5 => false
  */
 function isPositive(number) {
- return number >= 0;
-  }
-
-
-
-
+  return number >= 0;
+}
 /**
  * Returns the maximum of three numbers without using Array and Math classes methods.
  *
@@ -41,15 +37,15 @@ function isPositive(number) {
  *  -5, 0, 5      => 5
  *  -0.1, 0, 0.2  => 0.2
  */
-function getMaxNumber( a, b, c ) {
-let max = a;
-if (b > max) {
-  max = b;
-}
-if (c > max) {
-  max = c;
-}
-return max;
+function getMaxNumber(a, b, c) {
+  let max = a;
+  if (b > max) {
+    max = b;
+  }
+  if (c > max) {
+    max = c;
+  }
+  return max;
 }
 
 /**
